@@ -27,6 +27,17 @@ public class TwoActivities extends AppCompatActivity {
         mMessageEditText = findViewById(R.id.editText_main);
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
         mReplyTextView = findViewById(R.id.text_message_reply);
+
+        //Restore the state
+        if(savedInstanceState != null){
+            boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+            if (isVisible){
+                mReplyHeadTextView.setVisibility(View.VISIBLE);
+                mReplyTextView.setText(savedInstanceState.getString("reply_text"));
+                mReplyTextView.setVisibility(View.VISIBLE);
+            }
+        }
+
         Log.d(LOG_TAG, "--------");
         Log.d(LOG_TAG, "onCreate");
     }
@@ -93,6 +104,8 @@ public class TwoActivities extends AppCompatActivity {
             outState.putString("reply_text", mReplyTextView.getText().toString());
         }
     }
+
+
 
 
 }

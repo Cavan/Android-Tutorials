@@ -11,15 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ImplicitIntent"></activity>
         <activity android:name=".TwoActivities" />
-        <activity android:name=".SecondActivity"
-            android:label = "@string/activity2_name"
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/activity2_name"
             android:parentActivityName=".TwoActivities">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.helloworld.TwoActivities"/>
-
+                android:value="com.example.helloworld.TwoActivities" />
         </activity>
         <activity
             android:name=".HelpYourself"
