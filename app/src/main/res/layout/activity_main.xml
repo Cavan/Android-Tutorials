@@ -47,4 +47,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/show_text_scrolling_view"
         android:onClick="helpYourself"/>
+
+    <Button
+        android:id="@+id/twoActivities"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="143dp"
+        android:text="Two Activities"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help_view"
+        android:onClick="twoActivities"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
