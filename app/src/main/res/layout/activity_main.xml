@@ -23,42 +23,72 @@
         android:id="@+id/show_text_scrolling_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
 
+        android:onClick="scrollingView"
         android:text="Scroll View"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/show_toast_view"
-        android:onClick="scrollingView"/>
+        app:layout_constraintTop_toBottomOf="@+id/show_toast_view" />
 
     <Button
+        android:id="@+id/help_view"
         android:layout_width="114dp"
         android:layout_height="71dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="150dp"
-        android:id="@+id/help_view"
+        android:onClick="helpYourself"
         android:text="Help Yourself"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/show_text_scrolling_view"
-        android:onClick="helpYourself"/>
+        app:layout_constraintTop_toBottomOf="@+id/show_text_scrolling_view" />
 
     <Button
         android:id="@+id/twoActivities"
         android:layout_width="119dp"
         android:layout_height="69dp"
         android:layout_marginStart="149dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="143dp"
+        android:onClick="twoActivities"
         android:text="Two Activities"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/help_view"
-        android:onClick="twoActivities"/>
+        app:layout_constraintTop_toBottomOf="@+id/help_view" />
+
+    <Button
+        android:id="@+id/implicitIntents"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="143dp"
+        android:onClick="implicitIntents"
+        android:text="@string/implicit_intents"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twoActivities" />
+
+    <Button
+        android:id="@+id/receiveIntent"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="143dp"
+        android:onClick="receiveIntent"
+        android:text="@string/receive_intents"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/implicitIntents" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,4 +36,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, TwoActivities.class);
         startActivity(intent);
     }
+
+    public void implicitIntents(View view) {
+        Intent intent = new Intent(MainActivity.this, ImplicitIntent.class);
+        startActivity(intent);
+    }
+
+    public void receiveIntent(View view) {
+        Intent intent = new Intent(MainActivity.this, IntentReceiver.class);
+        startActivity(intent);
+    }
 }
