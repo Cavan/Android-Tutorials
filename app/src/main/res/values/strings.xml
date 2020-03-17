@@ -48,4 +48,37 @@ This volume starts with the first new Beatle song, “Free as a Bird” (based o
     <string name="share_text_with">Share this text with:</string>
     <string name="receive_intents">Receive Intents</string>
     <string name="uri_label">URI:</string>
+    <string name="title_activity_droid_cafe">DroidCafe</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_droid_desserts">DroidDesserts</string>
+    <string name="donuts">Clickable Images</string>
+    <string name="donuts_1">Donuts are glazed and sprinkled with candy.</string>
+    <string name="ice_cream_sandwiches">Ice cream sandwiches have chocolate wafers</string>
+    <string name="froyo">FroYo is premium self-serve frozen yogurt.</string>
+
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+    <string name="name_label_text">Name</string>
+    <string name="enter_address_hint">Enter Address</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="order_information">Order Information</string>
+    <string name="address">Address</string>
+    <string name="phone_label">Phone</string>
+    <string name="enter_phone_hint">Enter your phone number</string>
+    <string name="note_label">Note</string>
+    <string name="enter_note">Enter note</string>
+    <string name="delivery_label_text">Choose a delivery method:</string>
+    <string name="same_day_messenger_service">Same day messenger service</string>
+    <string name="next_day_ground_delivery">Next day ground delivery</string>
+    <string name="pick_up">Pick up</string>
+
+
 </resources>

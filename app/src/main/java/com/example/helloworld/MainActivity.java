@@ -46,4 +46,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, IntentReceiver.class);
         startActivity(intent);
     }
+
+    public void clickImage(View view) {
+        Intent intent = new Intent (this, ClickableImages.class);
+        startActivity(intent);
+    }
 }

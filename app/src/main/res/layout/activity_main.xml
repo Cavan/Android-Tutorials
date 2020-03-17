@@ -8,58 +8,60 @@
     android:background="?attr/colorPrimaryDark">
 
     <Button
+        android:id="@+id/receiveIntent3"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="receiveIntent"
+        android:text="Input Controls"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receiveIntent" />
+
+    <Button
         android:id="@+id/show_toast_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:onClick="toastView"
         android:text="Toast View"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="toastView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/show_text_scrolling_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
 
+        android:layout_marginStart="16dp"
         android:onClick="scrollingView"
         android:text="Scroll View"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/show_toast_view" />
 
     <Button
         android:id="@+id/help_view"
-        android:layout_width="114dp"
+        android:layout_width="0dp"
         android:layout_height="71dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="150dp"
         android:onClick="helpYourself"
         android:text="Help Yourself"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/show_text_scrolling_view" />
 
     <Button
         android:id="@+id/twoActivities"
-        android:layout_width="119dp"
+        android:layout_width="0dp"
         android:layout_height="69dp"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="143dp"
+        android:layout_marginTop="12dp"
         android:onClick="twoActivities"
         android:text="Two Activities"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/help_view" />
 
@@ -67,28 +69,56 @@
         android:id="@+id/implicitIntents"
         android:layout_width="119dp"
         android:layout_height="69dp"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="143dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="11dp"
         android:onClick="implicitIntents"
         android:text="@string/implicit_intents"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/receiveIntent2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/twoActivities" />
+
+    <Button
+        android:id="@+id/receiveIntent2"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="11dp"
+        android:onClick="receiveIntent"
+        android:text="@string/receive_intents"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/receiveIntent4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/implicitIntents" />
 
     <Button
         android:id="@+id/receiveIntent"
         android:layout_width="119dp"
         android:layout_height="69dp"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="143dp"
-        android:onClick="receiveIntent"
-        android:text="@string/receive_intents"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="11dp"
+        android:onClick="clickImage"
+        android:text="Clickable Images"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/receiveIntent3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/implicitIntents" />
+        app:layout_constraintTop_toBottomOf="@+id/receiveIntent4" />
+
+    <Button
+        android:id="@+id/receiveIntent4"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="receiveIntent"
+        android:text="Support Libraries"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/receiveIntent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receiveIntent2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

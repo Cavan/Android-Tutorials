@@ -11,7 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".IntentReceiver"></activity>
+        <activity android:name=".OrderActivity"></activity>
+        <activity
+            android:name=".DroidCafe"
+            android:label="@string/title_activity_droid_cafe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ClickableImages" />
+        <activity android:name=".IntentReceiver" />
         <activity android:name=".ImplicitIntent" />
         <activity android:name=".TwoActivities" />
         <activity
@@ -34,12 +40,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-             <intent-filter>
-                 <action android:name="android.intent.action.VIEW" />
-                 <category android:name="android.intent.category.DEFAULT" />
-                 <category android:name="android.intent.category.BROWSABLE" />
-                 <data android:scheme="http" android:host="developer.android.com" />
-             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="developer.android.com"
+                    android:scheme="http" />
+            </intent-filter>
         </activity>
     </application>
 
