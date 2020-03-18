@@ -121,4 +121,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/receiveIntent2" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="117dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="18dp"
+        android:onClick="menusAndPickers"
+        android:text="Menus and Pickers"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/show_text_scrolling_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="116dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="14dp"
+        android:text="Context Menu"
+        android:textStyle="bold"
+        android:onClick="contextMenu"
+        app:layout_constraintStart_toEndOf="@+id/help_view"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

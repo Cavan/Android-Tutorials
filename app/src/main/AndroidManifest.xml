@@ -11,12 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".OrderActivity"></activity>
         <activity
-            android:name=".DroidCafe"
-            android:label="@string/title_activity_droid_cafe"
+            android:name=".ContextMenuScrollingText"
+            android:label="@string/title_activity_context_menu_scrolling_text"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MenuPicker"
+            android:label="@string/title_activity_menu_picker"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ClickableImages" />
+        <activity android:name=".OrderActivity" />
+        <activity
+            android:name=".ClickableImages"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".IntentReceiver" />
         <activity android:name=".ImplicitIntent" />
         <activity android:name=".TwoActivities" />

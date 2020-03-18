@@ -51,4 +51,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent (this, ClickableImages.class);
         startActivity(intent);
     }
+
+    public void menusAndPickers(View view) {
+        Intent intent = new Intent (this, MenuPicker.class);
+        startActivity(intent);
+    }
+
+    public void contextMenu(View view) {
+        Intent intent = new Intent (this, ContextMenuScrollingText.class);
+        startActivity(intent);
+    }
 }
