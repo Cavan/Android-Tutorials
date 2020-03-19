@@ -11,15 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".DatePicker"></activity>
+        <activity android:name=".DialogAlert" />
         <activity
             android:name=".ContextMenuScrollingText"
             android:label="@string/title_activity_context_menu_scrolling_text"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MenuPicker"
             android:label="@string/title_activity_menu_picker"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".OrderActivity" />
+        <activity
+            android:name=".OrderActivity"
+            android:label="Order Activity"
+            android:parentActivityName=".ClickableImages">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ClickableImages" />
+
+            </activity>
         <activity
             android:name=".ClickableImages"
             android:theme="@style/AppTheme.NoActionBar" />

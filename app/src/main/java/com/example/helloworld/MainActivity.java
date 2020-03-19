@@ -61,4 +61,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent (this, ContextMenuScrollingText.class);
         startActivity(intent);
     }
+
+    public void alertDialog(View view) {
+        Intent intent = new Intent(this, DialogAlert.class);
+        startActivity(intent);
+    }
+
+    public void datePicker(View view) {
+        Intent intent = new Intent(this, DatePicker.class);
+        startActivity(intent);
+    }
 }
